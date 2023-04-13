@@ -1,11 +1,13 @@
 import React from "react"
+import spongebob from "./images/spongebob.png"
+
 
 export default function Header(){
     return(
-        <header>
-            <img src="https://www.clipartmax.com/png/small/101-1015783_el-burrito-by-azure-arts-burrito-with-mustache.png"/>
-            <h2>Absurd Memes</h2>
-            <h4>Meme Generator</h4>
+        <header className="header">
+            <h2 className="headerTitle">Bored Memes</h2>
+            <img className="headerImg" src= {spongebob}/>
+            <h4 className="headerMeme">Meme Generator</h4>
             
         </header>
     )
