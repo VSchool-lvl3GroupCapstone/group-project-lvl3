@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    background-color: black;
+    background-image: url("https://images.unsplash.com/photo-1574273509043-f94f45e5b164?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1775&q=80");
+    background-position-y: -200px;
+    background-position-x: -200px;
+}
+
+/* meme-header css */
+.header{
+    display: flex;
+    align-items: center;
+    height: 65px;
+    background-color: rgba(243, 239, 239, 0.932);
+    color: black;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+}
+.header:hover{
+    background-color: #383D3B;
+    color: #EEE5E9
+}
+
+.headerImg{
+    height: 100%;
+    margin-right: auto;
+    margin-left: 2%;
+}
+
+
+.headerTitle{
+    font-size: 30px;
+}
+
+.headerMeme{
+    margin-right: 7%;
+    font-size: 20px;
+}
