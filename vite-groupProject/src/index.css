@@ -37,3 +37,120 @@ body{
     margin-right: 7%;
     font-size: 20px;
 }
+
+/* meme form css  */
+
+.memeImage{
+    width:350px;
+    height:300px
+}
+
+.memeContainer{
+display:grid;
+grid-template-columns: repeat(3,1fr);
+grid-auto-rows: 100px;
+}
+
+.form{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+grid-auto-rows: 80px;
+grid-column: 1/-1;
+background-color: #383d3bc3;
+margin-left: 20%;
+margin-right: 20%;
+grid-row:1/6;
+border-radius: 5px;
+}
+
+.memePreview{
+width:500px;
+height:300px;
+grid-column: 2/3;
+grid-row: 2/6;
+position: relative;
+left: 15%;
+bottom:25px;
+display: grid;
+grid-template-columns: repeat(2,1fr);
+grid-auto-rows: 80px;
+
+}
+
+img{
+border-radius: 5px;
+}
+
+.form--topInput{
+height:20px;
+width: 250px;
+border-radius:5px;
+margin-top:25px;
+margin-left: 45%
+
+}
+
+.form--bottomInput{
+height:20px;
+width: 250px;
+border-radius:5px;
+grid-column: 3/4;
+margin-top:25px;
+position:relative;
+right: 40%
+}
+
+.form--button{
+width: 180px;
+grid-row:6/7;
+grid-column: 2/3;
+margin-left: 35%;
+cursor: pointer;
+}
+
+.formAddBtn{
+    grid-row:6/7;
+    grid-column: 2/3;
+    cursor: pointer;
+    
+}
+
+button{
+height:30px;
+width:70px;
+font-family:Arial, Helvetica, sans-serif;
+border-radius: 10px;
+}
+
+/* meme text for preview  */
+.meme--text.top{
+grid-column: 1/2;
+position: relative;
+bottom: 95px;
+text-align: center;
+color: white;
+font-size: 40px;
+-webkit-text-stroke-width: 2px;
+-webkit-text-stroke-color: black;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+.meme--text.bottom{
+    grid-column: 1/2;
+    position: relative;
+    text-align: center;
+    grid-row: 4/5;
+    bottom:25px;
+    color: white;
+	font-size: 40px;
+	-webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* added meme styling */
+
+.addedMemeDiv{
+    background-color: #383d3bc3;
+    color: white;
+}
