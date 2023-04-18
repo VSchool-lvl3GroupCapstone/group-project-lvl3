@@ -9,8 +9,8 @@ const addedItem = props.addMeme.map((input,index)=>(
             {
                 props.memeEdit === index? 
                 <div>
-                    <input type="text" onChange={(e)=>props.setEditTopText(e.target.value)} value ={props.editTopText}/>
-                    <input type="text" onChange={(e)=>props.setEditBottomText(e.target.value)} value ={props.editBottomText}/>
+                    <input type="text" onChange={(e)=>props.setEditTopText(e.target.value)} value ={props.editTopText} placeholder="Top Text"/>
+                    <input type="text" onChange={(e)=>props.setEditBottomText(e.target.value)} value ={props.editBottomText} placeholder="Bottom Text"/>
                 </div>:
                 <div>
                     <h2 className="memeTopText">{input.topText}</h2>
@@ -56,6 +56,7 @@ const addedItem = props.addMeme.map((input,index)=>(
                 <h2 className="meme--text bottom">{props.item.bottomText}</h2>
             </div>
             <div className="memeList">
+                <h1 className="savedTitle">Saved Memes</h1>
                 {addedItem}
             </div>
         </main>
