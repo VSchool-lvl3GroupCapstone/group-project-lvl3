@@ -42,10 +42,6 @@ body{
 
 /* meme form css  */
 
-.memeImage{
-    width:350px;
-    height:300px
-}
 
 .memeContainer{
 display:grid;
@@ -157,6 +153,11 @@ font-family:Arial, Helvetica, sans-serif;
     font-family:Arial, Helvetica, sans-serif;
 }
 
+.memeImagePreview{
+    width:350px;
+    height:300px
+}
+
 /* added meme styling */
 .memeList{
     grid-column:2/3;
@@ -168,6 +169,10 @@ font-family:Arial, Helvetica, sans-serif;
     color: white;
     border: 2px solid #ffba49;
     margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 80px;
+    border-radius: 5px;
 }
 
 .savedTitle{
@@ -179,10 +184,85 @@ margin:0;
 line-height: 2;
 border-radius:5px;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
-border: 2px solid #ffba49
+border: 2px solid #ffba49;
+
 }
 
 .savedTitle:hover{
     background-color: #383D3B;
-    color: #EEE5E9
+    color: #EEE5E9;
+}
+
+.savedText{
+grid-column: 2/3;
+grid-row:3/3
+}
+
+.memeTopText{
+text-align: center;
+position: relative;
+bottom:110px;
+color: white;
+font-size: 40px;
+-webkit-text-stroke-width: 2px;
+-webkit-text-stroke-color: black;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+.memeBottomText{
+text-align: center;
+position: relative;
+top:10px;
+color: white;
+font-size: 40px;
+-webkit-text-stroke-width: 2px;
+-webkit-text-stroke-color: black;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+.memeImage{
+grid-column: 2/3;
+grid-row: 1/5;
+margin-bottom: 0;
+margin-top: 50px;
+width:350px;
+height:300px
+}
+
+.deleteBtn{
+    grid-column: 2/3;
+    grid-row: 6/6;
+    margin-left: 69%;
+    width:110px;
+}
+
+.editBtn{
+    grid-column: 2/3;
+    grid-row: 6/6;
+    width:110px;
+}
+
+.saveBtn{
+    grid-column: 2/3;
+    grid-row: 6/6;
+    margin-left: 35%;
+    width:110px;
+}
+
+.topTextAdded{
+grid-column: 2/3;
+grid-row: 5/6;
+}
+
+.bottomTextAdded{
+    margin-left: 2%;
+    position: relative;
+    left:2px;
+    margin-top: 30px;
+}
+
+.addedInputs{
+    grid-column: 2/3;
+    grid-row: 5/6;
+    margin-top: 25px;
 }

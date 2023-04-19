@@ -8,18 +8,18 @@ const addedItem = props.addMeme.map((input,index)=>(
             <img src={input.randomMeme} className="memeImage" />
             {
                 props.memeEdit === index? 
-                <div>
-                    <input type="text" onChange={(e)=>props.setEditTopText(e.target.value)} value ={props.editTopText} placeholder="Top Text"/>
-                    <input type="text" onChange={(e)=>props.setEditBottomText(e.target.value)} value ={props.editBottomText} placeholder="Bottom Text"/>
+                <div className="addedInputs">
+                    <input type="text" onChange={(e)=>props.setEditTopText(e.target.value)} value ={props.editTopText} placeholder="Top Text" className="topTextAdded"/>
+                    <input type="text" onChange={(e)=>props.setEditBottomText(e.target.value)} value ={props.editBottomText} placeholder="Bottom Text" className="bottomTextAdded"/>
                 </div>:
-                <div>
+                <div className="savedText">
                     <h2 className="memeTopText">{input.topText}</h2>
-                    <h2 className="memeottomText">{input.bottomText}</h2>
+                    <h2 className="memeBottomText">{input.bottomText}</h2>
                 </div>
             }
-            <button onClick={() => props.handleDelete(index)}>Delete</button> 
-            <button onClick={() => props.setMemeEdit(index)}>Edit Text</button>
-            <button onClick={()=> props.saveMemeEdit(index)}>Save</button>
+            <button onClick={() => props.handleDelete(index)} className="deleteBtn">Delete</button> 
+            <button onClick={() => props.setMemeEdit(index)} className="editBtn">Edit Text</button>
+            <button onClick={()=> props.saveMemeEdit(index)} className="saveBtn">Save</button>
     </div>
     ))
 
@@ -51,7 +51,7 @@ const addedItem = props.addMeme.map((input,index)=>(
                 <button className="formAddBtn">Add Item</button> 
             </form>
             <div className="memePreview">
-                <img src={props.item.randomMeme} className="memeImage" />
+                <img src={props.item.randomMeme} className="memeImagePreview" />
                 <h2 className="meme--text top">{props.item.topText}</h2>
                 <h2 className="meme--text bottom">{props.item.bottomText}</h2>
             </div>

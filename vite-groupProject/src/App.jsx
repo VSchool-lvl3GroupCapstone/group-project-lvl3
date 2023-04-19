@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css'
 import Header from './Header'
-import Meme from "./Memes"
+import Meme from "./Meme"
 
 function App() {
 //create an object as state that'll store the text data and image 
